@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Portfolio - Capstone Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white min-h-screen">
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full top-0 z-50 backdrop-blur-md bg-slate-900/70 border-b border-purple-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center animate-glow">
+                        <span class="text-xl font-bold">MP</span>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Magic Portfolio</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="#about" class="hover:text-primary transition-colors duration-300">About</a>
+                    <a href="#projects" class="hover:text-primary transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="animate-slideIn">
+                <div class="mb-8 inline-block">
+                    <span class="px-4 py-2 bg-purple-500/20 rounded-full text-sm font-medium border border-purple-500/30 backdrop-blur-sm">
+                        🚀 Welcome to My Portfolio
+                    </span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    <span class="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                        Crafting Digital
+                    </span>
+                    <br>
+                    <span class="text-white">Experiences</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                    Full-stack developer passionate about creating beautiful, functional, and innovative web applications with modern technologies.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#projects" class="px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-primary rounded-lg font-semibold hover:bg-primary/10 transition-all duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Floating Elements -->
+            <div class="mt-20 relative h-64">
+                <div class="absolute top-0 left-1/4 w-16 h-16 bg-primary/20 rounded-full animate-float blur-xl"></div>
+                <div class="absolute top-10 right-1/4 w-24 h-24 bg-secondary/20 rounded-full animate-float blur-xl" style="animation-delay: 1s;"></div>
+                <div class="absolute bottom-0 left-1/2 w-20 h-20 bg-accent/20 rounded-full animate-float blur-xl" style="animation-delay: 2s;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">About Me</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="glass-card p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-4">Who I Am</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        I'm a passionate developer with expertise in modern web technologies. I love turning complex problems into simple, beautiful, and intuitive solutions. My journey in tech has been driven by curiosity and a desire to create meaningful digital experiences.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="skill-card p-6 rounded-xl text-center transform hover:scale-105 transition-transform duration-300">
+                        <div class="text-4xl mb-3">⚡</div>
+                        <h4 class="font-bold mb-2">Frontend</h4>
+                        <p class="text-sm text-gray-400">React, Vue, Tailwind</p>
+                    </div>
+                    <div class="skill-card p-6 rounded-xl text-center transform hover:scale-105 transition-transform duration-300">
+                        <div class="text-4xl mb-3">🔧</div>
+                        <h4 class="font-bold mb-2">Backend</h4>
+                        <p class="text-sm text-gray-400">Node.js, Python, Java</p>
+                    </div>
+                    <div class="skill-card p-6 rounded-xl text-center transform hover:scale-105 transition-transform duration-300">
+                        <div class="text-4xl mb-3">🎨</div>
+                        <h4 class="font-bold mb-2">Design</h4>
+                        <p class="text-sm text-gray-400">UI/UX, Figma, Adobe</p>
+                    </div>
+                    <div class="skill-card p-6 rounded-xl text-center transform hover:scale-105 transition-transform duration-300">
+                        <div class="text-4xl mb-3">☁️</div>
+                        <h4 class="font-bold mb-2">Cloud</h4>
+                        <p class="text-sm text-gray-400">AWS, Docker, K8s</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
+        <div class="max-w-7xl mx-auto w-full">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">
+                <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Featured Projects</span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card group rounded-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-6xl">🎯</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AI Task Manager</h3>
+                        <p class="text-gray-400 mb-4">Smart task management with AI-powered suggestions and automation</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/20 rounded-full text-xs">React</span>
+                            <span class="px-3 py-1 bg-secondary/20 rounded-full text-xs">Node.js</span>
+                            <span class="px-3 py-1 bg-accent/20 rounded-full text-xs">AI</span>
+                        </div>
+                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card group rounded-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-pink-500 to-orange-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-6xl">🎨</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Design System Pro</h3>
+                        <p class="text-gray-400 mb-4">Comprehensive design system for modern web applications</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/20 rounded-full text-xs">Vue</span>
+                            <span class="px-3 py-1 bg-secondary/20 rounded-full text-xs">Tailwind</span>
+                            <span class="px-3 py-1 bg-accent/20 rounded-full text-xs">Figma</span>
+                        </div>
+                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card group rounded-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-teal-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-6xl">🚀</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cloud Dashboard</h3>
+                        <p class="text-gray-400 mb-4">Real-time analytics dashboard for cloud infrastructure</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/20 rounded-full text-xs">Python</span>
+                            <span class="px-3 py-1 bg-secondary/20 rounded-full text-xs">AWS</span>
+                            <span class="px-3 py-1 bg-accent/20 rounded-full text-xs">Docker</span>
+                        </div>
+                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300 font-medium">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
+        <div class="max-w-4xl mx-auto w-full text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Let's Work Together</span>
+            </h2>
+            <p class="text-xl text-gray-300 mb-12">
+                Have a project in mind? Let's create something amazing together!
+            </p>
+            
+            <div class="glass-card p-8 rounded-2xl mb-12">
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-slate-800/50 border border-purple-500/30 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300">
+                        <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-slate-800/50 border border-purple-500/30 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300">
+                    </div>
+                    <input type="text" placeholder="Subject" class="w-full px-4 py-3 bg-slate-800/50 border border-purple-500/30 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300">
+                    <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-3 bg-slate-800/50 border border-purple-500/30 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300 resize-none"></textarea>
+                    <button type="submit" class="w-full px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="w-12 h-12 rounded-full bg-slate-800/50 border border-purple-500/30 flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300 transform hover:scale-110">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-slate-800/50 border border-purple-500/30 flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300 transform hover:scale-110">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-slate-800/50 border border-purple-500/30 flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300 transform hover:scale-110">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-purple-500/20 backdrop-blur-md bg-slate-900/50 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">
+                    © 2025 Magic Portfolio. Built with ❤️ using Tailwind CSS
+                </p>
+                <p class="text-sm text-gray-500 mt-2">
+                    IBM Capstone Project - Code Generation
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
