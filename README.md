@@ -21,9 +21,9 @@
 
 | Area       | AI Capability | Description |
 |------------|---------------|-------------|
-| 🏛️ ** Struktur HTML	** | Pembuatan Kerangka Modular | Menghasilkan struktur HTML semantik untuk setiap bagian (Navbar, Hero, About, Projects, Skills) secara terpisah, memastikan fondasi yang kokoh. |
-| 🎨 **  Styling CSS	** | Pembuatan Kerangka Modular | Generasi Variabel & Layout	Membuat variabel warna CSS untuk sistem tema dan menghasilkan kode Flexbox untuk layout dua kolom pada bagian "About Me" serta layout grid pada bagian "Projects" |
-| 🏛️ ** Struktur HTML	** | Pembuatan Kerangka Modular | Menghasilkan struktur HTML semantik untuk setiap bagian (Navbar, Hero, About, Projects, Skills) secara terpisah, memastikan fondasi yang kokoh. |
+| 🏛️ **Struktur HTML** | Pembuatan Kerangka Modular | Menghasilkan struktur HTML semantik untuk setiap bagian (Navbar, Hero, About, Projects, Skills) secara terpisah, memastikan fondasi yang kokoh. |
+| 🎨 **Styling CSS** | Pembuatan Kerangka Modular | Generasi Variabel & Layout	Membuat variabel warna CSS untuk sistem tema dan menghasilkan kode Flexbox untuk layout dua kolom pada bagian "About Me" serta layout grid pada bagian "Projects" |
+| 🏛️ **Struktur HTML** | Pembuatan Kerangka Modular | Menghasilkan struktur HTML semantik untuk setiap bagian (Navbar, Hero, About, Projects, Skills) secara terpisah, memastikan fondasi yang kokoh. |
 | 📝 **Pembuatan Konten** | Penulisan Draf Teks | Membantu menyusun draf awal untuk teks "About Me" dengan gaya profesional yang sesuai dengan profil seorang AI Engineer. |
 | ⚡ **Logika JavaScript** | 	Penulisan Fungsi Interaktif | Menghasilkan seluruh logika JavaScript untuk fitur pengalih tema (Dark/Light/System Mode), termasuk deteksi preferensi sistem dan penyimpanan pilihan di localStorage. |
 | 🔧 **Code Optimization** | Performance & Readability | Mengoptimalkan kode hasil AI agar lebih efisien, mudah dibaca, dan terjaga maintainability-nya. |
