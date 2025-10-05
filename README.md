@@ -12,8 +12,8 @@
 | 🌐 **HTML5 & CSS3** | Fondasi struktur dan gaya untuk web modern |
 | 🟨 **JavaScript (ES6+)** | Memberikan interaktivitas dan logika dinamis pada sisi klien |
 | 🤖 **IBM Granite** | AI generatif yang digunakan sebagai asisten coding untuk pembuatan & optimisasi kode |
-| 🎨 ** Font Awesome** | Pustaka ikon untuk memperkaya visualisasi keahlian |
-| 🚀 ** GitHub Pages** | Platform hosting situs statis gratis yang terintegrasi dengan GitHub |
+| 🎨 **Font Awesome** | Pustaka ikon untuk memperkaya visualisasi keahlian |
+| 🚀 **GitHub Pages** | Platform hosting situs statis gratis yang terintegrasi dengan GitHub |
 
 ## 🤖 AI Support Explanation
 
