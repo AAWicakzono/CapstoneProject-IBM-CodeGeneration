@@ -1,0 +1,395 @@
+/*  Reset dan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* 🎨 Tema SUISEI (Light Mode) */
+:root {
+  --background-color: #F5F9FF;
+  --text-color: #2A2A2A;
+  --primary-color: #6EC6FF;
+  --secondary-color: #2A1A57;
+  --accent-color: #D8B25C;
+  --card-background: #E4E8F0;
+  --border-color: #C5C9D6;
+  --hover-color: #A4D8FF;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 🌑 Tema ADO (Dark Mode) */
+body.dark-mode {
+  --background-color: #062B49;
+  --text-color: #D6D9E0;
+  --primary-color: #2FC4FF;
+  --secondary-color: #2D49FF;
+  --accent-color: #A0181B;
+  --card-background: #3E3E46;
+  --border-color: #2C2F36;
+  --hover-color: #38D3FF;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+body, a, .project-card, .cta-button, header, #skills, #projects {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+/* =============================
+   LINK
+   ============================= */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+/* =============================
+   HEADER
+   ============================= */
+header {
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  filter: drop-shadow(0 0 6px var(--primary-color));
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+.theme-switcher {
+  display: flex;
+  gap: 10px;
+}
+
+.theme-switcher button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* .theme-switcher button svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-color);
+} */
+
+/* =============================
+   HERO SECTION
+   ============================= */
+#hero {
+  background: linear-gradient(180deg, rgba(11,11,13,0.1), rgba(6,43,73,0.1));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.4s ease;
+}
+
+.hero-content {
+  max-width: 700px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  text-shadow: 0 0 15px rgba(47,196,255,0.5);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px var(--shadow-color);
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--hover-color);
+}
+
+/* =============================
+   PROJECTS SECTION
+   ============================= */
+#projects {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(47,196,255,0.4);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.project-card {
+  background-color: var(--card-background);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 15px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px var(--hover-color);
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.tech-tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-tags span {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* =============================
+   SKILLS SECTION
+   ============================= */
+#skills {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.skill-item {
+  background-color: var(--card-background);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  box-shadow: 0 0 25px var(--hover-color);
+  transform: translateY(-5px);
+}
+
+.skill-item i {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+/* =============================
+   ANIMATIONS
+   ============================= */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* 
+/* Styling untuk section#about
+#about {
+  text-align: center;
+  padding: 40px 0;
+}
+
+Styling untuk paragraf di dalam section#about
+#about p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+Styling untuk daftar media sosial
+#about .social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+Styling untuk item daftar media sosial
+#about .social-media li {
+  margin: 0 10px;
+}
+
+Styling untuk ikon SVG di dalam link
+#about .social-media a svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--text-color);
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+#about .social-media a:hover svg {
+  fill: var(--primary-color);
+  transform: scale(1.1);
+}
+*/
+/* =============================
+   ABOUT SECTION (Layout 2 Kolom)
+   ============================= */
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: var(--background-color);
+}
+
+/* .container di #about akan mengikuti styling .container yang sudah ada */
+
+.about-section .container {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Jarak antara teks dan gambar */
+}
+
+.text-column {
+    flex: 1.5; /* Memberi lebih banyak ruang untuk teks */
+    text-align: left;
+}
+
+.image-column {
+    flex: 1; /* Memberi ruang lebih sedikit untuk gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: var(--primary-color); /* Menggunakan variabel warna primer Anda */
+    margin-right: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.social-media a:hover {
+    color: var(--hover-color); /* Menggunakan variabel warna hover Anda */
+}
+
+
+/* Membuatnya responsif di HP (gambar akan pindah ke bawah teks) */
+@media (max-width: 768px) {
+    .about-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-column {
+        text-align: center; /* Di HP, teks dibuat rata tengah */
+    }
+}
